@@ -19,7 +19,6 @@
 
 **Evidence-based performance skills for AI coding agents**
 
-[![Validate skills](https://github.com/KinwiseNZ-DevOps/flutter-optimiser/actions/workflows/validate.yml/badge.svg)](https://github.com/KinwiseNZ-DevOps/flutter-optimiser/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent skills](https://img.shields.io/badge/agent_skills-9-8A2BE2)](https://agentskills.io)
 [![Format](https://img.shields.io/badge/format-SKILL.md-orange)](https://agentskills.io/specification)
@@ -125,7 +124,6 @@ skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
 templates/skill-template/   authoring template
 evals/cases.jsonl           3+ behavioural cases per skill
 scripts/skills_tool.py      validate, regenerate catalogue (stdlib only)
-.github/workflows/          CI runs `skills_tool.py check`
 AGENTS.md                   agent-facing repo map
 ```
 
