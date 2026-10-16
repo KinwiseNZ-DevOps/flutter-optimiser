@@ -1,10 +1,38 @@
-# Flutter Performance Skills
+```
+███████╗██╗     ██╗   ██╗████████╗████████╗███████╗██████╗
+██╔════╝██║     ██║   ██║╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗
+█████╗  ██║     ██║   ██║   ██║      ██║   █████╗  ██████╔╝
+██╔══╝  ██║     ██║   ██║   ██║      ██║   ██╔══╝  ██╔══██╗
+██║     ███████╗╚██████╔╝   ██║      ██║   ███████╗██║  ██║
+╚═╝     ╚══════╝ ╚═════╝    ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝
+ ██████╗ ██████╗ ████████╗██╗███╗   ███╗██╗███████╗███████╗██████╗
+██╔═══██╗██╔══██╗╚══██╔══╝██║████╗ ████║██║██╔════╝██╔════╝██╔══██╗
+██║   ██║██████╔╝   ██║   ██║██╔████╔██║██║█████╗  █████╗  ██████╔╝
+██║   ██║██╔═══╝    ██║   ██║██║╚██╔╝██║██║██╔══╝  ██╔══╝  ██╔══██╗
+╚██████╔╝██║        ██║   ██║██║ ╚═╝ ██║██║███████╗███████╗██║  ██║
+ ╚═════╝ ╚═╝        ╚═╝   ╚═╝╚═╝     ╚═╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
+```
 
-A set of agent skills for auditing and optimising any production Flutter app, based on Flutter's official performance guidance. One router skill plus eight focused skills following the [Agent Skills](https://agentskills.io/specification) format.
+<div align="center">
 
-Principle: inspect first, measure, change only what evidence justifies, preserve all business behaviour.
+# ⚡ Flutter Optimiser
 
-## Skills
+**Evidence-based performance skills for AI coding agents**
+
+[![Validate skills](https://github.com/KinwiseNZ-DevOps/flutter-optimiser/actions/workflows/validate.yml/badge.svg)](https://github.com/KinwiseNZ-DevOps/flutter-optimiser/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Agent skills](https://img.shields.io/badge/agent_skills-9-8A2BE2)](https://agentskills.io)
+[![Format](https://img.shields.io/badge/format-SKILL.md-orange)](https://agentskills.io/specification)
+[![Tooling](https://img.shields.io/badge/tooling-stdlib_only-success)](scripts/skills_tool.py)
+
+</div>
+
+> [!IMPORTANT]
+> **Principle: inspect first, measure, change only what evidence justifies, preserve all business behaviour.**
+
+A set of agent skills for auditing and optimising **any** production Flutter app, based on Flutter's official performance guidance. One **router skill** plus **eight focused skills**, following the [Agent Skills](https://agentskills.io/specification) open format — drop them into Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.
+
+## 🧩 Skills
 
 <!-- catalogue:begin -->
 | Skill | Purpose |
@@ -20,21 +48,47 @@ Principle: inspect first, measure, change only what evidence justifies, preserve
 | [`flutter-performance-specialist`](skills/flutter-performance-specialist/SKILL.md) | Orchestrates evidence-based performance audits and targeted optimisations of a production Flutter app. |
 <!-- catalogue:end -->
 
-## How they fit together
+## 🗺️ How they fit together
 
-```
-flutter-performance-specialist (router, guardrails, report format)
- ├─ flutter-perf-audit                    investigate + plan
- ├─ flutter-perf-build-and-rebuild        build(), helpers, const, rebuild scope
- ├─ flutter-perf-lists-and-scrolling      lazy lists, extents
- ├─ flutter-perf-derived-state  totals, caching, client vs backend
- ├─ flutter-perf-isolates                 CPU-bound work off the UI isolate
- ├─ flutter-perf-images-and-assets        decoding, densities, SVG vs raster
- ├─ flutter-perf-rendering-effects        blur, opacity, clips, shadows
- └─ flutter-perf-profiling-and-validation measure + verify + regression
+```mermaid
+flowchart TD
+    S["⚡ flutter-performance-specialist<br/>router · guardrails · report format"]
+    S --> A["🔍 flutter-perf-audit<br/>investigate + plan"]
+    S --> B["🏗️ flutter-perf-build-and-rebuild<br/>build() · const · rebuild scope"]
+    S --> L["📜 flutter-perf-lists-and-scrolling<br/>lazy lists · extents"]
+    S --> D["🧮 flutter-perf-derived-state<br/>caching · client vs backend"]
+    S --> I["🧵 flutter-perf-isolates<br/>CPU-bound work off the UI isolate"]
+    S --> P["🖼️ flutter-perf-images-and-assets<br/>decoding · densities · SVG vs raster"]
+    S --> E["✨ flutter-perf-rendering-effects<br/>blur · opacity · clips · shadows"]
+    S --> V["📈 flutter-perf-profiling-and-validation<br/>measure · verify · regression"]
 ```
 
-## Layout
+Several concerns usually apply. The router handles them in this order of expected payoff: **derived state and rebuild scope → lists → isolates → images → effects**.
+
+## 📦 Install
+
+> [!TIP]
+> Install `flutter-performance-specialist` **plus every `flutter-perf-*` skill** — the router links to its siblings by relative path.
+
+Copy or symlink the `skills/` subfolders you want into your agent's skills directory:
+
+| Agent | Where skills live |
+|---|---|
+| Claude Code | `~/.claude/skills/` or a project's `.claude/skills/` |
+| Codex · Cursor · Copilot · OpenCode · Windsurf | the agent's own SKILL.md discovery path |
+
+## ✅ Validate
+
+```bash
+python scripts/skills_tool.py check
+```
+
+Checks: frontmatter, name/folder match, description length and trigger, body under 500 lines, relative links resolve, at least 3 eval cases per skill, and that the README catalogue is not stale. Stdlib only — no dependencies.
+
+## 🗂️ Layout
+
+<details>
+<summary>Repository layout</summary>
 
 ```
 skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
@@ -45,18 +99,19 @@ scripts/skills_tool.py      validate, regenerate catalogue (stdlib only)
 AGENTS.md                   agent-facing repo map
 ```
 
-## Install
+</details>
 
-Copy or symlink the `skills/` subfolders you want into your agent's skills directory (for Claude Code: `~/.claude/skills/` or a project's `.claude/skills/`). Install `flutter-performance-specialist` plus every `flutter-perf-*` skill; the router links to its siblings by relative path.
+## 📌 Status and limits
 
-## Validate
+> [!NOTE]
+> - Evals in `evals/cases.jsonl` are case definitions with expected behaviours; no runner or baseline results exist yet.
+> - Skills are based on Flutter's official docs and have not yet been tested against a live codebase.
+> - Licensed under MIT (see [LICENSE](LICENSE)).
 
-```bash
-python scripts/skills_tool.py check
-```
+---
 
-## Status and limits
+<div align="center">
 
-- Evals in `evals/cases.jsonl` are case definitions with expected behaviours; no runner or baseline results exist yet.
-- Licensed under MIT (see [LICENSE](LICENSE)).
-- Skills are based on Flutter's official docs and have not yet been tested against a live codebase.
+**⚡ Built on the [Agent Skills](https://agentskills.io) open format · grounded in [Flutter's official performance docs](https://docs.flutter.dev/perf/best-practices)**
+
+</div>
