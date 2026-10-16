@@ -77,6 +77,36 @@ Copy or symlink the `skills/` subfolders you want into your agent's skills direc
 | Claude Code | `~/.claude/skills/` or a project's `.claude/skills/` |
 | Codex · Cursor · Copilot · OpenCode · Windsurf | the agent's own SKILL.md discovery path |
 
+## 🚀 Usage
+
+> [!TIP]
+> **You never need to memorise skill names.** Just describe the problem in plain words — the router picks the right skill automatically. But if you want short, reliable phrases that always work, use these:
+
+**The 3-step flow** (this is all most people need):
+
+```text
+1. "audit my flutter app"        → read-only investigation + plan
+2. "go ahead with the plan"      → one change at a time, routed to the right skill
+3. "verify it on my device"      → profile-mode measurement + final report
+```
+
+**Short phrases that trigger each skill:**
+
+| Just say… | What you get | Skill used |
+|---|---|---|
+| `audit my flutter app` | Read-only hotspot scan, findings classified, plan block | *audit* |
+| `this page rebuilds too much` | Rebuild scope narrowed (const, select, Consumer) | *build-and-rebuild* |
+| `the list is janky` | Eager list → lazy builder, extent advice | *lists-and-scrolling* |
+| `this calculation is slow` | Caching / aggregation — results proven identical | *derived-state* |
+| `move this off the UI thread` | Isolate gate, then implementation | *isolates* |
+| `images eat my memory` | Decode-size fixes, asset variants | *images-and-assets* |
+| `the blur is laggy` | Raster-cost investigation, targeted fixes | *rendering-effects* |
+| `did it actually get faster?` | Profile-mode before/after evidence | *profiling-and-validation* |
+| `write it up` | XML report — measured results only, no "fully optimised" claims | *report format* |
+
+> [!NOTE]
+> Skills also trigger on their own when your request matches — e.g. pasting a janky `ListView(children: …)` snippet is enough. In Claude Code you can also invoke explicitly with `/flutter-performance-specialist`, but the plain phrases above are shorter and work across every agent.
+
 ## ✅ Validate
 
 ```bash
