@@ -30,7 +30,7 @@
 > [!IMPORTANT]
 > **Principle: inspect first, measure, change only what evidence justifies, preserve all business behaviour.**
 
-A set of agent skills for auditing and optimising **any** production Flutter app, based on Flutter's official performance guidance. One **router skill** plus **eight focused skills**, following the [Agent Skills](https://agentskills.io/specification) open format — drop them into Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.
+A set of agent skills for auditing and optimising **any** production Flutter app, based on Flutter's official performance guidance. One **router skill** plus **eight focused skills**, following the [Agent Skills](https://agentskills.io/specification) open format: drop them into Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.
 
 ## 🧩 Skills
 
@@ -68,7 +68,7 @@ Several concerns usually apply. The router handles them in this order of expecte
 ## 📦 Install
 
 > [!TIP]
-> Install `flutter-performance-specialist` **plus every `flutter-perf-*` skill** — the router links to its siblings by relative path.
+> Install `flutter-performance-specialist` **plus every `flutter-perf-*` skill**; the router links to its siblings by relative path.
 
 Copy or symlink the `skills/` subfolders you want into your agent's skills directory:
 
@@ -80,7 +80,7 @@ Copy or symlink the `skills/` subfolders you want into your agent's skills direc
 ## 🚀 Usage
 
 > [!TIP]
-> **You never need to memorise skill names.** Just describe the problem in plain words — the router picks the right skill automatically. But if you want short, reliable phrases that always work, use these:
+> **You never need to memorise skill names.** Just describe the problem in plain words; the router picks the right skill automatically. But if you want short, reliable phrases that always work, use these:
 
 **The 3-step flow** (this is all most people need):
 
@@ -97,15 +97,15 @@ Copy or symlink the `skills/` subfolders you want into your agent's skills direc
 | `audit my flutter app` | Read-only hotspot scan, findings classified, plan block | *audit* |
 | `this page rebuilds too much` | Rebuild scope narrowed (const, select, Consumer) | *build-and-rebuild* |
 | `the list is janky` | Eager list → lazy builder, extent advice | *lists-and-scrolling* |
-| `this calculation is slow` | Caching / aggregation — results proven identical | *derived-state* |
+| `this calculation is slow` | Caching / aggregation, results proven identical | *derived-state* |
 | `move this off the UI thread` | Isolate gate, then implementation | *isolates* |
 | `images eat my memory` | Decode-size fixes, asset variants | *images-and-assets* |
 | `the blur is laggy` | Raster-cost investigation, targeted fixes | *rendering-effects* |
 | `did it actually get faster?` | Profile-mode before/after evidence | *profiling-and-validation* |
-| `write it up` | XML report — measured results only, no "fully optimised" claims | *report format* |
+| `write it up` | XML report, measured results only, no "fully optimised" claims | *report format* |
 
 > [!NOTE]
-> Skills also trigger on their own when your request matches — e.g. pasting a janky `ListView(children: …)` snippet is enough. In Claude Code you can also invoke explicitly with `/flutter-performance-specialist`, but the plain phrases above are shorter and work across every agent.
+> Skills also trigger on their own when your request matches (e.g. pasting a janky `ListView(children: …)` snippet is enough). In Claude Code you can also invoke explicitly with `/flutter-performance-specialist`, but the plain phrases above are shorter and work across every agent.
 
 ## ✅ Validate
 
@@ -113,7 +113,7 @@ Copy or symlink the `skills/` subfolders you want into your agent's skills direc
 python scripts/skills_tool.py check
 ```
 
-Checks: frontmatter, name/folder match, description length and trigger, body under 500 lines, relative links resolve, at least 3 eval cases per skill, and that the README catalogue is not stale. Stdlib only — no dependencies.
+Checks: frontmatter, name/folder match, description length and trigger, body under 500 lines, relative links resolve, at least 3 eval cases per skill, and that the README catalogue is not stale. Stdlib only, no dependencies.
 
 ## 🗂️ Layout
 
