@@ -53,6 +53,8 @@ Checks: frontmatter, name/folder match, description length and trigger, body und
   4. No Flutter facts that are not supported by the official docs listed in `references/official-sources.md`. Reason: an unsupported "fact" taught to agents becomes a bug shipped to users.
   5. No per-platform manifests until a platform needs one. Reason: premature manifests are maintenance surface.
 
+- `hooks/`: the always-on start-up hook. `hooks/always-on.config.json` holds the id, name, phrase, rules path and auto-detect markers; `skills/flutter-performance-specialist/references/always-on-rules.md` is the only source of the rules it loads. Keep that file under 320 words. Reason: it is paid for in tokens at the start of every session, and a copy would drift from the skills. The saved mode (on, off or auto) lives in the user's `~/.claude/.flutter-optimiser.mode`, never in this repo.
+
 ## Irreversible and shared actions
 
 - Proceed freely for local, reversible actions: editing files, running checks, regenerating the catalogue.

@@ -1,0 +1,14 @@
+{
+  "id": "flutter-optimiser",
+  "name": "Flutter Optimiser",
+  "phrase": "optimiser",
+  "rules": "skills/flutter-performance-specialist/references/always-on-rules.md",
+  "defaultMode": "on",
+  "autoDetect": true,
+  "autoMarkers": [
+    {
+      "file": "pubspec.yaml",
+      "contains": "flutter"
+    }
+  ]
+}

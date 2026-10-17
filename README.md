@@ -109,6 +109,21 @@ To install supplied Claude Code, GitHub Copilot or Codex profiles into a project
 
 ---
 
+### Always on
+
+In Claude Code, Flutter Optimiser loads a short ruleset into every session as soon as the plugin is installed (measure before changing, behaviour preserved, no blanket rewrites). It tells you its state at the start of each session and costs roughly 350 tokens.
+
+| Mode | What it does |
+|---|---|
+| `on` (default) | The rules apply in every session |
+| `auto` | The rules apply only in projects that look relevant: a Flutter `pubspec.yaml` is found |
+| `off` | The rules do not load |
+
+- Say **"stop optimiser mode"** to pause it for the current session, and **"start optimiser mode"** to resume.
+- Ask Claude to **set the saved mode to on, off or auto**. It writes that word into `~/.claude/.flutter-optimiser.mode`. You can also edit that file yourself, and deleting it returns to the default (`on`).
+- It needs Node on the machine, because the start-up hook runs a small Node script. Without Node the hook quietly does nothing.
+- Other agents have no start-up hook here. Paste `skills/flutter-performance-specialist/references/always-on-rules.md` into that agent's instruction file instead.
+
 <a id="usage"></a>
 ## 🚀 Usage
 

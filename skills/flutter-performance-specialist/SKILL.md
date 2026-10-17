@@ -65,3 +65,7 @@ Full text and rationale: [references/guardrails.md](references/guardrails.md). S
 - [references/guardrails.md](references/guardrails.md): constraints with mechanisms
 - [references/report-format.md](references/report-format.md): required final report sections
 - [references/official-sources.md](references/official-sources.md): primary Flutter/Dart docs
+
+## Always-on mode
+
+When the plugin is installed, a start-up hook adds [always-on-rules.md](references/always-on-rules.md) to every Claude Code session. The user can say "stop optimiser mode" to pause it, or ask for the saved mode to be set to on, off or auto. The rules file is the single source of those rules; edit it, not a copy.
