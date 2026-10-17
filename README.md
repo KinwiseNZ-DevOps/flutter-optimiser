@@ -98,7 +98,7 @@ Copy or symlink the `skills/` subfolders you want into your agent's skills direc
 | Claude Code | `~/.claude/skills/` or a project's `.claude/skills/` |
 | Codex · Cursor · Copilot · OpenCode · Windsurf | the agent's own SKILL.md discovery path |
 
-To install supplied Claude Code, GitHub Copilot or Codex profiles into a project, run `python scripts/install_agents.py --host claude-code --target PATH`. Other compatible hosts receive the skills only. If no profiles are supplied, the installer makes no changes. The planner is available for all three supported hosts as `flutter-performance-specialist-implementation-planner`.
+To install supplied Claude Code, GitHub Copilot or Codex profiles into a project, run `python scripts/install_agents.py --host claude-code --target PATH`. Other compatible hosts receive the skills only. Each supported host has one main `flutter-performance-specialist-workflow` profile and one optional `flutter-performance-specialist-implementation-planner` helper.
 
 ---
 

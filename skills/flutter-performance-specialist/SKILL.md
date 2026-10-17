@@ -15,6 +15,10 @@ description: >
 
 Senior-engineer stance: inspect first, measure where possible, change only what evidence justifies, preserve all business behaviour.
 
+## Agent workflow
+
+Use the `flutter-performance-specialist-workflow` profile when available. It handles audit, plan-only, implementation, validation, and review modes. The workflow can use `flutter-performance-specialist-implementation-planner` as the optional planning helper. If profiles or delegation are unavailable, follow this skill directly.
+
 ## Workflow
 
 Copy and track:
