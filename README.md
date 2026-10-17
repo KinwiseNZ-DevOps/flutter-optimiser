@@ -44,6 +44,8 @@ Table of contents:
 
 A set of agent skills for auditing and optimising **any** production Flutter app, based on Flutter's official performance guidance. One **router skill** plus **eight focused skills**, following the [Agent Skills](https://agentskills.io/specification) open format: drop them into Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.
 
+---
+
 <a id="skills"></a>
 ## 🧩 Skills
 
@@ -60,6 +62,8 @@ A set of agent skills for auditing and optimising **any** production Flutter app
 | [`flutter-perf-rendering-effects`](skills/flutter-perf-rendering-effects/SKILL.md) | Investigates expensive Flutter visual effects and raster cost: Opacity, BackdropFilter, blur, clipping (ClipRRect, ClipPath), large or layered shadows, overlapping transparency, saveLayer, and continuously animated effects. |
 | [`flutter-performance-specialist`](skills/flutter-performance-specialist/SKILL.md) | Orchestrates evidence-based performance audits and targeted optimisations of a production Flutter app. |
 <!-- catalogue:end -->
+
+---
 
 <a id="how-they-fit-together"></a>
 ## 🗺️ How they fit together
@@ -79,6 +83,8 @@ flowchart TD
 
 Several concerns usually apply. The router handles them in this order of expected payoff: **derived state and rebuild scope → lists → isolates → images → effects**.
 
+---
+
 <a id="install"></a>
 ## 📦 Install
 
@@ -93,6 +99,8 @@ Copy or symlink the `skills/` subfolders you want into your agent's skills direc
 | Codex · Cursor · Copilot · OpenCode · Windsurf | the agent's own SKILL.md discovery path |
 
 To install supplied Claude Code, GitHub Copilot or Codex profiles into a project, run `python scripts/install_agents.py --host claude-code --target PATH`. Other compatible hosts receive the skills only. If no profiles are supplied, the installer makes no changes. The planner is available for all three supported hosts as `flutter-performance-specialist-implementation-planner`.
+
+---
 
 <a id="usage"></a>
 ## 🚀 Usage
@@ -125,6 +133,8 @@ To install supplied Claude Code, GitHub Copilot or Codex profiles into a project
 > [!NOTE]
 > Skills also trigger on their own when your request matches (e.g. pasting a janky `ListView(children: …)` snippet is enough). In Claude Code you can also invoke explicitly with `/flutter-performance-specialist`, but the plain phrases above are shorter and work across every agent.
 
+---
+
 <a id="validate"></a>
 ## ✅ Validate
 
@@ -133,6 +143,8 @@ python scripts/skills_tool.py check
 ```
 
 Checks: frontmatter, name/folder match, description length and trigger, body under 500 lines, relative links resolve, at least 3 eval cases per skill, and that the README catalogue is not stale. Stdlib only, no dependencies.
+
+---
 
 <a id="layout"></a>
 ## 🗂️ Layout
@@ -150,6 +162,8 @@ AGENTS.md                   agent-facing repo map
 ```
 
 </details>
+
+---
 
 <a id="status-and-limits"></a>
 ## 📌 Status and limits
