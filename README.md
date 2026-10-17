@@ -27,11 +27,6 @@
 
 </div>
 
-> [!IMPORTANT]
-> **Principle: inspect first, measure, change only what evidence justifies, preserve all business behaviour.**
-
-A set of agent skills for auditing and optimising **any** production Flutter app, based on Flutter's official performance guidance. One **router skill** plus **eight focused skills**, following the [Agent Skills](https://agentskills.io/specification) open format: drop them into Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.
-
 Table of contents:
 
 - [Skills](#skills)
@@ -41,6 +36,13 @@ Table of contents:
 - [Validate](#validate)
 - [Layout](#layout)
 - [Status and limits](#status-and-limits)
+
+---
+
+> [!IMPORTANT]
+> **Principle: inspect first, measure, change only what evidence justifies, preserve all business behaviour.**
+
+A set of agent skills for auditing and optimising **any** production Flutter app, based on Flutter's official performance guidance. One **router skill** plus **eight focused skills**, following the [Agent Skills](https://agentskills.io/specification) open format: drop them into Claude Code, Codex, Cursor, Copilot, OpenCode, or any SKILL.md-compatible agent.
 
 <a id="skills"></a>
 ## 🧩 Skills
