@@ -21,7 +21,7 @@ Copy and track:
 
 ```
 - [ ] 1. Audit (flutter-perf-audit): map architecture, classify findings
-- [ ] 2. Plan: <plan> block per justified finding
+- [ ] 2. Plan: use `flutter-performance-specialist-implementation-planner` when available, then record a `<plan>` block per justified finding
 - [ ] 3. Implement incrementally, one concern at a time (route table below)
 - [ ] 4. Validate after each change (flutter-perf-profiling-and-validation)
 - [ ] 5. Report using references/report-format.md
