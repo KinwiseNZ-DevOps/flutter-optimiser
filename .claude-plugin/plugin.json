@@ -1,0 +1,19 @@
+{
+  "name": "flutter-optimiser",
+  "version": "0.1.0",
+  "description": "Flutter performance audit and optimisation skills with a workflow agent",
+  "author": {
+    "name": "KinWise Limited"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/KinwiseNZ-DevOps/flutter-optimiser",
+  "keywords": [
+    "agent-skills",
+    "flutter",
+    "performance"
+  ],
+  "agents": [
+    "./resources/agents/claude-code/skill-specific/flutter-performance-specialist-workflow.md",
+    "./resources/agents/claude-code/skill-specific/flutter-performance-specialist-implementation-planner.md"
+  ]
+}

@@ -11,7 +11,7 @@ Create an evidence-based, actionable implementation plan for a Flutter performan
 
 ## Workflow
 
-1. Read `AGENTS.md` and `skills/flutter-performance-specialist/SKILL.md` first. Follow the router and read the focused skills and references relevant to the request.
+1. Read `AGENTS.md` and the `flutter-performance-specialist` skill first. Follow the router and read the focused skills and references relevant to the request.
 2. Inspect the actual project files, call sites, state flow, and available profiling evidence. Never infer a hotspot from widget shape or user perception alone. If evidence is missing, state what must be measured before implementation.
 3. Route each confirmed concern to the focused skill. Use `flutter-perf-audit` for architecture and evidence, the matching `flutter-perf-*` skill for a justified change, and `flutter-perf-profiling-and-validation` for proof.
 4. Keep the plan incremental. Preserve business behaviour, calculations, access, API contracts, and navigation. Include a backend option only when the audit supports it. Do not propose schema changes or new dependencies without a clear need.

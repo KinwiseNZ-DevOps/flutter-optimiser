@@ -1,0 +1,14 @@
+{
+  "name": "flutter-optimiser-marketplace",
+  "owner": {
+    "name": "KinWise Limited"
+  },
+  "description": "Flutter performance audit and optimisation skills with a workflow agent",
+  "plugins": [
+    {
+      "name": "flutter-optimiser",
+      "source": "./",
+      "description": "Flutter performance audit and optimisation skills with a workflow agent"
+    }
+  ]
+}

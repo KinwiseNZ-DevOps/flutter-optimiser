@@ -91,7 +91,14 @@ Several concerns usually apply. The router handles them in this order of expecte
 > [!TIP]
 > Install `flutter-performance-specialist` **plus every `flutter-perf-*` skill**; the router links to its siblings by relative path.
 
-Copy or symlink the `skills/` subfolders you want into your agent's skills directory:
+**Claude Code plugin** (installs the skills and agent profiles together):
+
+```text
+/plugin marketplace add KinwiseNZ-DevOps/flutter-optimiser
+/plugin install flutter-optimiser@flutter-optimiser-marketplace
+```
+
+Or copy or symlink the `skills/` subfolders you want into your agent's skills directory:
 
 | Agent | Where skills live |
 |---|---|
