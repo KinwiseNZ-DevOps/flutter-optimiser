@@ -122,7 +122,6 @@ Checks: frontmatter, name/folder match, description length and trigger, body und
 
 ```
 skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
-templates/skill-template/   authoring template
 evals/cases.jsonl           3+ behavioural cases per skill
 scripts/skills_tool.py      validate, regenerate catalogue (stdlib only)
 AGENTS.md                   agent-facing repo map
