@@ -15,6 +15,7 @@ SKILLS = ROOT / "skills"
 README = ROOT / "README.md"
 EVALS = ROOT / "evals" / "cases.jsonl"
 BEGIN, END = "<!-- catalogue:begin -->", "<!-- catalogue:end -->"
+BADGE_RE = re.compile(r"(badge/agent_skills-)(\d+|<N>)(-)")
 NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 LINK_RE = re.compile(r"\]\((?!https?://|#|mailto:)([^)\s]+)\)")
 MAX_BODY_LINES, MAX_DESC, MAX_NAME, MIN_EVALS = 500, 1024, 64, 3
@@ -113,10 +114,12 @@ def catalogue(write):
     new = f"{BEGIN}\n{build_catalogue()}\n{END}"
     if not pat.search(text):
         return ["README.md: catalogue markers missing"]
-    if pat.sub(lambda _: new, text) == text:
+    updated = pat.sub(lambda _: new, text)
+    updated = BADGE_RE.sub(lambda m: f"{m.group(1)}{len(skill_dirs())}{m.group(3)}", updated)
+    if updated == text:
         return []
     if write:
-        README.write_text(pat.sub(lambda _: new, text), encoding="utf-8")
+        README.write_text(updated, encoding="utf-8")
         return []
     return ["README.md: catalogue stale; run `python scripts/skills_tool.py catalogue`"]
 
