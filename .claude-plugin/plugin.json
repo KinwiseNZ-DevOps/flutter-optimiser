@@ -15,5 +15,6 @@
   "agents": [
     "./resources/agents/claude-code/skill-specific/flutter-performance-specialist-workflow.md",
     "./resources/agents/claude-code/skill-specific/flutter-performance-specialist-implementation-planner.md"
-  ]
+  ],
+  "experimental": { "evals": "quality/evals" }
 }
