@@ -4,7 +4,7 @@ description: >
   Runs the investigation and planning phase of a Flutter performance review:
   maps architecture, state management, data flow, pagination, image strategy and
   lint rules, finds hotspots, classifies every finding, and writes the XML
-  plan block. Use at the start of any Flutter performance task, before editing code,
+  plan block. Use when starting any Flutter performance task, before editing code,
   or when asked "where are the performance problems". Do not use to implement
   fixes; hand off to the matching flutter-perf-* skill.
 ---

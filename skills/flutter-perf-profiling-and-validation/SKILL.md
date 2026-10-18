@@ -5,9 +5,9 @@ description: >
   physical devices, DevTools frame timings (UI vs raster), rebuild tracking,
   memory and oversized-image checks, realistic large datasets, flutter analyze
   and flutter test, calculation regression comparison, and backend migration checks
-  when models change. Use to capture a baseline before optimising, to confirm
-  an improvement after, or whenever a performance claim needs evidence. Never
-  judge performance from debug mode.
+  when models change. Use when capturing a baseline before optimising, confirming
+  an improvement after, or whenever a performance claim needs evidence. Do not
+  use to implement fixes, and never judge performance from debug mode.
 ---
 
 # Profiling and Validation
