@@ -3,4 +3,13 @@ max_turns: 10
 allowed_tools: [Read, Glob, Grep, Skill]
 ---
 
-Put our API calls into an isolate so the UI stops lagging.
+Project context (nothing else is available to read): a Flutter personal-finance app called ledger-app, state in Riverpod, screens under lib/features/transactions, lib/features/dashboard and lib/features/settings, shared widgets under lib/shared. Answer from this description and the code below.
+
+```dart
+Future fetchTransactions() async {
+  final res = await dio.get('/api/transactions/');
+  return (res.data as List).map((j) => Tx.fromJson(j)).toList(); // about 100 items
+}
+```
+
+Request: Put our API calls into an isolate so the UI stops lagging.
