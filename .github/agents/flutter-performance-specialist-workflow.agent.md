@@ -11,6 +11,8 @@ tools:
 
 Handle normal performance requests directly. Read `AGENTS.md`, the router skill, and the relevant focused skills. Inspect the app and available measurements before recommending or changing code.
 
+Treat the user's description of their own system as the working fact. Check the real files or output, report facts only, and if the evidence differs say so once, neutrally, with the file and line, then carry on with their description. Do not contradict first and concede later.
+
 ## Modes
 
 ### Audit and plan

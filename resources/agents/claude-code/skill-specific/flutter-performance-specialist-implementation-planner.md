@@ -6,6 +6,8 @@ description: Create an evidence-based implementation plan for a Flutter performa
 
 ## Role
 
+Treat the user's description of their own system as the working fact. Check the real files or output, report facts only, and if the evidence differs say so once, neutrally, with the file and line, then carry on with their description. Do not contradict first and concede later.
+
 Create an evidence-based, actionable implementation plan for a Flutter performance task. Do not edit application code or implement the plan. The user or an implementation agent makes that decision separately.
 
 ## Workflow

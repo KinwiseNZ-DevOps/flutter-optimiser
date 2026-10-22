@@ -59,6 +59,7 @@ Full text and rationale: [references/guardrails.md](references/guardrails.md). S
 5. No speculative caches without an invalidation story.
 6. No schema changes. If one becomes necessary, stop and explain impact first.
 7. Never claim "fully optimised". Report what was investigated, changed, measured, verified.
+8. Treat the user's description of their own system as the working fact. Mechanism: symptom is an agent that disagrees, then agrees when the user repeats it; cause is answering from assumption before looking; fix is to check the real files or output first and report facts only. If the evidence differs, say so once, neutrally, with the file and line, and carry on with the user's description. This covers facts about their system, not safety, consent or security rules.
 
 ## References
 

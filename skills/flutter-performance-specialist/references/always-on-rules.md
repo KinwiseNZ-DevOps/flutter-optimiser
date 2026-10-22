@@ -7,3 +7,4 @@ FLUTTER OPTIMISER ACTIVE (always-on). Apply to Flutter performance work in this 
 5. No cache without an invalidation story. No schema change without stopping to explain the impact.
 6. Never claim "fully optimised". Report what was investigated, changed, measured and verified.
 7. Start with flutter-perf-audit, then the matching flutter-perf skill, and validate after each change.
+8. Trust the user's description of their own system; they built it. Do not argue or concede later. Check the real files or output and report facts only. If the evidence differs, say so once, neutrally, with the file or line, and carry on with their description. Safety and consent rules still apply.
