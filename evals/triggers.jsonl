@@ -1,0 +1,27 @@
+{"skill": "flutter-perf-audit", "type": "obvious", "query": "Audit our Flutter app for performance problems and write a plan before changing any code."}
+{"skill": "flutter-perf-audit", "type": "paraphrase", "query": "Where are the slow parts of our app? Map it out first and do not fix anything yet."}
+{"skill": "flutter-perf-audit", "type": "unrelated", "query": "Add a new settings screen to the Flutter app."}
+{"skill": "flutter-perf-build-and-rebuild", "type": "obvious", "query": "Our search box rebuilds the whole page on every keystroke. Fix the rebuild scope."}
+{"skill": "flutter-perf-build-and-rebuild", "type": "paraphrase", "query": "This screen does sorting inside build() and feels sluggish when I tap a toggle."}
+{"skill": "flutter-perf-build-and-rebuild", "type": "unrelated", "query": "Replace our eager ListView with something that copes with thousands of items."}
+{"skill": "flutter-perf-derived-state", "type": "obvious", "query": "We recompute balance totals and category percentages on every rebuild. Cache them safely."}
+{"skill": "flutter-perf-derived-state", "type": "paraphrase", "query": "The app scans thousands of records every time a number appears on screen. Should the server do this instead?"}
+{"skill": "flutter-perf-derived-state", "type": "unrelated", "query": "Decode our big images at a smaller size."}
+{"skill": "flutter-perf-images-and-assets", "type": "obvious", "query": "Memory is high on our image-heavy screens. Fix the oversized image decoding."}
+{"skill": "flutter-perf-images-and-assets", "type": "paraphrase", "query": "Our app download is huge because of the pictures and icons bundled in it. How do we shrink it?"}
+{"skill": "flutter-perf-images-and-assets", "type": "unrelated", "query": "Move the CSV parsing off the main thread."}
+{"skill": "flutter-perf-isolates", "type": "obvious", "query": "Parsing a large CSV freezes the UI. Should this move to an isolate?"}
+{"skill": "flutter-perf-isolates", "type": "paraphrase", "query": "A big JSON file blocks the screen for a second after login. How do we keep the app smooth?"}
+{"skill": "flutter-perf-isolates", "type": "unrelated", "query": "Why does a long list stutter when I scroll?"}
+{"skill": "flutter-perf-lists-and-scrolling", "type": "obvious", "query": "Scrolling is janky in our long transaction history. Switch it to builder lists."}
+{"skill": "flutter-perf-lists-and-scrolling", "type": "paraphrase", "query": "The page takes ages to appear because it builds thousands of rows at once."}
+{"skill": "flutter-perf-lists-and-scrolling", "type": "unrelated", "query": "Our blur and shadows make the raster thread slow."}
+{"skill": "flutter-perf-profiling-and-validation", "type": "obvious", "query": "Capture a performance baseline in profile mode before we optimise."}
+{"skill": "flutter-perf-profiling-and-validation", "type": "paraphrase", "query": "We changed the list code. Prove it really got faster, with numbers."}
+{"skill": "flutter-perf-profiling-and-validation", "type": "unrelated", "query": "Write a Makefile target for flutter analyze."}
+{"skill": "flutter-perf-rendering-effects", "type": "obvious", "query": "DevTools shows high raster time from BackdropFilter and big shadows. What should we do?"}
+{"skill": "flutter-perf-rendering-effects", "type": "paraphrase", "query": "Frames drop whenever the frosted glass card animates."}
+{"skill": "flutter-perf-rendering-effects", "type": "unrelated", "query": "Recompute the totals only when the inputs change."}
+{"skill": "flutter-performance-specialist", "type": "obvious", "query": "Audit and speed up the performance of our Flutter app."}
+{"skill": "flutter-performance-specialist", "type": "paraphrase", "query": "The app feels slow and janky. Where do we even start?"}
+{"skill": "flutter-performance-specialist", "type": "unrelated", "query": "Write the Dart model class for a transaction."}

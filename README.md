@@ -97,6 +97,10 @@ Several concerns usually apply. The router handles them in this order of expecte
 /plugin marketplace add KinwiseNZ-DevOps/flutter-optimiser
 /plugin install flutter-optimiser@flutter-optimiser-marketplace
 ```
+**ChatGPT desktop plugin** (local, skills and bundled hooks):
+
+This repo has a portable `plugin.json` manifest and a repo marketplace at `.agents/plugins/marketplace.json`. Open this repo as a trusted project and restart ChatGPT desktop, then install **Flutter Optimiser** from the Plugins Directory. Review and trust bundled hook scripts before they run.
+
 
 Or copy or symlink the `skills/` subfolders you want into your agent's skills directory:
 
@@ -115,12 +119,12 @@ In Claude Code, Flutter Optimiser loads a short ruleset into every session as so
 
 | Mode | What it does |
 |---|---|
-| `on` (default) | The rules apply in every session |
-| `auto` | The rules apply only in projects that look relevant: a Flutter `pubspec.yaml` is found |
+| `on` | The rules apply in every session |
+| `auto` (default) | The rules apply only in projects that look relevant: a Flutter `pubspec.yaml` is found |
 | `off` | The rules do not load |
 
 - Say **"stop optimiser mode"** to pause it for the current session, and **"start optimiser mode"** to resume.
-- Ask Claude to **set the saved mode to on, off or auto**. It writes that word into `~/.claude/.flutter-optimiser.mode`. You can also edit that file yourself, and deleting it returns to the default (`on`).
+- Ask Claude to **set the saved mode to on, off or auto**. It writes that word into `~/.claude/.flutter-optimiser.mode`. You can also edit that file yourself, and deleting it returns to the default (`auto`).
 - It needs Node on the machine, because the start-up hook runs a small Node script. Without Node the hook quietly does nothing.
 - Other agents have no start-up hook here. Paste `skills/flutter-performance-specialist/references/always-on-rules.md` into that agent's instruction file instead.
 
@@ -201,6 +205,7 @@ skills/<name>/SKILL.md      one folder per skill (+ references/ where needed)
 resources/agents/           optional native profile sources
 scripts/install_agents.py   install supplied profiles into a project
 evals/cases.jsonl           3+ behavioural cases per skill
+evals/triggers.jsonl        triggering tests per skill: obvious, paraphrase, unrelated
 scripts/skills_tool.py      validate, regenerate catalogue (stdlib only)
 AGENTS.md                   agent-facing repo map
 ```
