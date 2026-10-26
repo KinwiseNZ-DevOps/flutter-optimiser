@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "flutter-optimiser",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Flutter performance audit and optimisation skills with a workflow agent",
   "author": {
     "name": "KinWise Limited"
