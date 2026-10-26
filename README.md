@@ -59,8 +59,8 @@ A set of agent skills for auditing and optimising **any** production Flutter app
 | [`flutter-perf-isolates`](skills/flutter-perf-isolates/SKILL.md) | Decides whether and how to move CPU-heavy Flutter work off the main isolate using Isolate.run or compute: large CSV parsing, bulk categorisation, pattern or recurrence detection, big JSON parsing, image manipulation, large local analytics. |
 | [`flutter-perf-lists-and-scrolling`](skills/flutter-perf-lists-and-scrolling/SKILL.md) | Improves scrolling and list performance in Flutter: replaces eager ListView(children: data.map(...).toList()) with ListView.builder, GridView.builder or sliver builders for large item histories, and evaluates itemExtent, prototypeItem and itemExtentBuilder to cut layout work. |
 | [`flutter-perf-profiling-and-validation`](skills/flutter-perf-profiling-and-validation/SKILL.md) | Measures and validates Flutter performance work: flutter run --profile on physical devices, DevTools frame timings (UI vs raster), rebuild tracking, memory and oversized-image checks, realistic large datasets, flutter analyze and flutter test, calculation regression comparison, and backend migration checks when models change. |
-| [`flutter-perf-rendering-effects`](skills/flutter-perf-rendering-effects/SKILL.md) | Investigates expensive Flutter visual effects and raster cost: Opacity, BackdropFilter, blur, clipping (ClipRRect, ClipPath), large or layered shadows, overlapping transparency, saveLayer, and continuously animated effects. |
-| [`flutter-performance-specialist`](skills/flutter-performance-specialist/SKILL.md) | Orchestrates evidence-based performance audits and targeted optimisations of a production Flutter app. |
+| [`flutter-perf-rendering-effects`](skills/flutter-perf-rendering-effects/SKILL.md) | Optimises only where profiling or implementation evidence shows real cost, and keeps the visual design materially unchanged. |
+| [`flutter-performance-specialist`](skills/flutter-performance-specialist/SKILL.md) | Routes to the focused flutter-perf-* skills and enforces shared guardrails and the final report format. |
 <!-- catalogue:end -->
 
 ---

@@ -1,13 +1,12 @@
 ---
 name: flutter-perf-isolates
 description: >
-  Decides whether and how to move CPU-heavy Flutter work off the main isolate
-  using Isolate.run or compute: large CSV parsing, bulk
-  categorisation, pattern or recurrence detection, big JSON
-  parsing, image manipulation, large local analytics. Use when DevTools shows
-  UI-thread frames blocked by Dart computation. Do not use for ordinary network
-  or async I/O, or for small computations where isolate overhead exceeds the
-  work.
+  Use when DevTools shows UI-thread frames blocked by Dart computation. Decides
+  whether and how to move CPU-heavy Flutter work off the main isolate using
+  Isolate.run or compute: large CSV parsing, bulk categorisation, pattern or
+  recurrence detection, big JSON parsing, image manipulation, large local
+  analytics. Do not use for ordinary network or async I/O, or for small
+  computations where isolate overhead exceeds the work.
 ---
 
 # Isolates for CPU-Heavy Work

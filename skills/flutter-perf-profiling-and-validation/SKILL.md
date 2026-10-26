@@ -1,13 +1,14 @@
 ---
 name: flutter-perf-profiling-and-validation
 description: >
-  Measures and validates Flutter performance work: flutter run --profile on
-  physical devices, DevTools frame timings (UI vs raster), rebuild tracking,
-  memory and oversized-image checks, realistic large datasets, flutter analyze
-  and flutter test, calculation regression comparison, and backend migration checks
-  when models change. Use when capturing a baseline before optimising, confirming
-  an improvement after, or whenever a performance claim needs evidence. Do not
-  use to implement fixes, and never judge performance from debug mode.
+  Use when capturing a baseline before optimising, confirming an improvement
+  after, or whenever a performance claim needs evidence. Measures and validates
+  Flutter performance work: flutter run --profile on physical devices, DevTools
+  frame timings (UI vs raster), rebuild tracking, memory and oversized-image
+  checks, realistic large datasets, flutter analyze and flutter test,
+  calculation regression comparison, and backend migration checks when models
+  change. Do not use to implement fixes, and never judge performance from debug
+  mode.
 ---
 
 # Profiling and Validation

@@ -1,12 +1,12 @@
 ---
 name: flutter-perf-build-and-rebuild
 description: >
-  Fixes expensive work inside Flutter build() methods and over-broad rebuilds:
-  repeated sorting/filtering/formatting in build, widget-returning helper
-  methods, missing const, builder widgets rebuilding static children, and
-  state subscriptions (Riverpod select, Consumer, scoped providers) that rebuild
-  too much. Use when a screen rebuilds too much, a toggle or search input
-  rebuilds a whole page, or build() does computation. Do not use for list
+  Use when a screen rebuilds too much, a toggle or search input rebuilds a whole
+  page, or build() does computation. Fixes expensive work inside Flutter build()
+  methods and over-broad rebuilds: repeated sorting/filtering/formatting in
+  build, widget-returning helper methods, missing const, builder widgets
+  rebuilding static children, and state subscriptions (Riverpod select,
+  Consumer, scoped providers) that rebuild too much. Do not use for list
   construction (flutter-perf-lists-and-scrolling) or derived-state caching
   (flutter-perf-derived-state).
 ---

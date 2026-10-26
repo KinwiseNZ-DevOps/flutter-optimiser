@@ -1,13 +1,13 @@
 ---
 name: flutter-perf-rendering-effects
 description: >
-  Investigates expensive Flutter visual effects and raster cost: Opacity,
-  BackdropFilter, blur, clipping (ClipRRect, ClipPath), large or layered
-  shadows, overlapping transparency, saveLayer, and continuously animated
-  effects. Use when DevTools shows high raster time or janky raster frames.
-  Optimises only where profiling or implementation evidence shows real cost, and
-  keeps the visual design materially unchanged. Do not use for UI-thread
-  rebuild problems (flutter-perf-build-and-rebuild).
+  Use when DevTools shows high raster time or janky raster frames. Optimises
+  only where profiling or implementation evidence shows real cost, and keeps the
+  visual design materially unchanged. Investigates expensive Flutter visual
+  effects and raster cost: Opacity, BackdropFilter, blur, clipping (ClipRRect,
+  ClipPath), large or layered shadows, overlapping transparency, saveLayer, and
+  continuously animated effects. Do not use for UI-thread rebuild problems
+  (flutter-perf-build-and-rebuild).
 ---
 
 # Rendering Effects

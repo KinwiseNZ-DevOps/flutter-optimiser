@@ -1,12 +1,12 @@
 ---
 name: flutter-perf-audit
 description: >
-  Runs the investigation and planning phase of a Flutter performance review:
-  maps architecture, state management, data flow, pagination, image strategy and
-  lint rules, finds hotspots, classifies every finding, and writes the XML
-  plan block. Use when starting any Flutter performance task, before editing code,
-  or when asked "where are the performance problems". Do not use to implement
-  fixes; hand off to the matching flutter-perf-* skill.
+  Use when starting any Flutter performance task, before editing code, or when
+  asked "where are the performance problems". Runs the investigation and
+  planning phase of a Flutter performance review: maps architecture, state
+  management, data flow, pagination, image strategy and lint rules, finds
+  hotspots, classifies every finding, and writes the XML plan block. Do not use
+  to implement fixes; hand off to the matching flutter-perf-* skill.
 ---
 
 # Flutter Performance Audit

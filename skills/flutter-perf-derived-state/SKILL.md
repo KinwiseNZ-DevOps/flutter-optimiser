@@ -1,13 +1,13 @@
 ---
 name: flutter-perf-derived-state
 description: >
-  Optimises derived and aggregated state in a Flutter app without changing
-  results: totals, counts, percentages, balances, scores, grouped or sorted
-  collections, and other values computed from large datasets. Covers
-  memoisation, provider-level caching, incremental calculation, and deciding
-  whether aggregation or pagination belongs on a backend instead of the client.
   Use when the same values are recomputed on every rebuild or the client
-  repeatedly scans thousands of records. Do not use to change calculation rules.
+  repeatedly scans thousands of records. Optimises derived and aggregated state
+  in a Flutter app without changing results: totals, counts, percentages,
+  balances, scores, grouped or sorted collections, and other values computed
+  from large datasets. Covers memoisation, provider-level caching, incremental
+  calculation, and deciding whether aggregation or pagination belongs on a
+  backend instead of the client. Do not use to change calculation rules.
 ---
 
 # Derived and Aggregated State

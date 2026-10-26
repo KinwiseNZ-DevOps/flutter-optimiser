@@ -1,13 +1,13 @@
 ---
 name: flutter-perf-lists-and-scrolling
 description: >
-  Improves scrolling and list performance in Flutter: replaces eager
-  ListView(children: data.map(...).toList()) with ListView.builder, GridView.builder
-  or sliver builders for large item histories, and evaluates itemExtent,
-  prototypeItem and itemExtentBuilder to cut layout work. Use for janky scroll,
-  slow first paint of long lists, or thousands of widgets built at once. Do not
-  use for small fixed lists, and not for per-item rebuild scope
-  (flutter-perf-build-and-rebuild).
+  Use for janky scroll, slow first paint of long lists, or thousands of widgets
+  built at once. Improves scrolling and list performance in Flutter: replaces
+  eager ListView(children: data.map(...).toList()) with ListView.builder,
+  GridView.builder or sliver builders for large item histories, and evaluates
+  itemExtent, prototypeItem and itemExtentBuilder to cut layout work. Do not use
+  for small fixed lists, and not for per-item rebuild scope (flutter-perf-build-
+  and-rebuild).
 ---
 
 # Lists and Scrolling

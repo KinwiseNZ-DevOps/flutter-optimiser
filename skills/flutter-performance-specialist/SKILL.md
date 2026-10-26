@@ -1,14 +1,13 @@
 ---
 name: flutter-performance-specialist
 description: >
-  Orchestrates evidence-based performance audits and targeted optimisations of a
-  production Flutter app.
   Use when the user asks to audit, profile, speed up, or optimise Flutter
-  performance: jank, slow scrolling, excess rebuilds, large lists,
-  memory, image decoding, CPU-heavy work, or "should this move to the backend".
-  Routes to the focused flutter-perf-* skills and enforces shared guardrails and
-  the final report format. Do not use for non-performance Flutter work, new
-  feature development, or backend-only performance tuning.
+  performance: jank, slow scrolling, excess rebuilds, large lists, memory, image
+  decoding, CPU-heavy work, or "should this move to the backend". Routes to the
+  focused flutter-perf-* skills and enforces shared guardrails and the final
+  report format. Orchestrates evidence-based performance audits and targeted
+  optimisations of a production Flutter app. Do not use for non-performance
+  Flutter work, new feature development, or backend-only performance tuning.
 ---
 
 # Flutter Performance Specialist (router)
