@@ -51,3 +51,7 @@ Rules that prevent the common failures:
 ## Alternative
 
 If the cost comes from repeated scans, redesign (single pass, caching, backend aggregation) before reaching for an isolate.
+
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.

@@ -56,6 +56,10 @@ No schema changes for this task. If an optimisation truly needs one, stop and ex
 
 Run old and new implementation on identical source data and compare outputs exactly (use decimal-safe comparison if the project avoids floating point for money or precision-sensitive values). Include edge cases: empty data, period boundaries, negative values, mixed units/currencies, scoped or permission-limited data. Keep this as an automated test.
 
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
+
 ## Next
 
 Heavy one-off computations that still block frames: [flutter-perf-isolates](../flutter-perf-isolates/SKILL.md).

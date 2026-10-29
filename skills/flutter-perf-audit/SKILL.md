@@ -63,6 +63,10 @@ One block per confirmed finding (and per likely finding only after measurement):
 
 Do not plan checklist items that are not present in the code.
 
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
+
 ## Next
 
 Route each planned change via [flutter-performance-specialist](../flutter-performance-specialist/SKILL.md). Baseline measurements: [flutter-perf-profiling-and-validation](../flutter-perf-profiling-and-validation/SKILL.md).

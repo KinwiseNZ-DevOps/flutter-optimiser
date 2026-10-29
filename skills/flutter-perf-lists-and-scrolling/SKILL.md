@@ -61,3 +61,7 @@ If the client receives thousands of records only to show a page, check for exist
 ## Verify
 
 Profile-mode scroll through a representative large list (hundreds to several thousand rows); compare jank frames before/after. See [flutter-perf-profiling-and-validation](../flutter-perf-profiling-and-validation/SKILL.md).
+
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.

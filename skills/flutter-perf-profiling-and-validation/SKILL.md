@@ -63,3 +63,7 @@ The migration must be intentional, reviewable, and contain no unrelated schema c
 ## 7. Report
 
 Fill the sections in [report-format](../flutter-performance-specialist/references/report-format.md). State exactly what was investigated, changed, measured, verified. Never claim "fully optimised".
+
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.

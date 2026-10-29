@@ -69,3 +69,7 @@ Full text and rationale: [references/guardrails.md](references/guardrails.md). S
 ## Always-on mode
 
 A start-up hook adds [always-on-rules.md](references/always-on-rules.md) to Claude Code sessions in matching projects. It is the single source of those rules, so edit it, not a copy. Say "stop optimiser mode" to pause it. The README covers the saved mode and the safety checks.
+
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.

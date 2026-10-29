@@ -41,3 +41,7 @@ Visual design must remain materially unchanged. If a compromise is truly require
 ## 4. Verify
 
 Compare raster frame times before/after on a representative physical device in profile mode, and a visual comparison of the affected screen. Method: [flutter-perf-profiling-and-validation](../flutter-perf-profiling-and-validation/SKILL.md).
+
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.

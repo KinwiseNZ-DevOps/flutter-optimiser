@@ -52,3 +52,7 @@ Converting only because another format is "theoretically smaller" is not a reaso
 ## 5. Verify
 
 Before/after: peak image memory, decode sizes in the Inspector, scroll jank on image-heavy lists, and a visual side-by-side at target densities. Method: [flutter-perf-profiling-and-validation](../flutter-perf-profiling-and-validation/SKILL.md).
+
+## Hard rules
+
+- Act only on what the user asked. Before answering or changing anything, open the relevant files and check what is already done; report only what you checked, never guess, and do not redo finished work. Reason: guesses and repeated work waste the user's credit.
